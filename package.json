@@ -1,0 +1,32 @@
+{
+  "name": "qogger-library",
+  "author": "Andrés 'Quantium' González Aragón",
+  "license": "MIT",
+  "version": "1.0.0",
+  "main": "qogger.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "logger",
+    "logging",
+    "debug",
+    "console",
+    "chalk",
+    "qogger"
+  ],
+  "description": "A versatile logging library for Node.js applications, providing colorful console output and debug capabilities.",
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "debug": "^4.4.0"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0",
+    "@babel/preset-env": "^7.16.0"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest"
+    }
+  }
+}
