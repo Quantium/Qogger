@@ -23,9 +23,6 @@ jobs:
           node-version: '16'
           registry-url: 'https://registry.npmjs.org'
 
-      - name: Install dependencies
-        run: npm install
-
       - name: Patch version
         run:  |
             git config --global user.name 'github-actions[bot]'
@@ -33,6 +30,9 @@ jobs:
             npm version patch -m "ci: bump version to %s"
             git remote set-url origin https://x-access-token:${{ secrets.GH_PAT }}@github.com/Quantium/Qogger.git
             git push origin main --follow-tags
+
+      - name: Install dependencies
+        run: npm install
 
       - name: Run tests
         run: npm test
