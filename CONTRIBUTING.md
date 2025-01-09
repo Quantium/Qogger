@@ -1,6 +1,6 @@
-# Contributing to gh Library
+# Contributing to Qogger
 
-First off, thank you for considering contributing to Qogger Library! It's people like you that make this project great.
+First off, thank you for considering contributing to Qogger! It's people like you that make this project great.
 
 ## How Can I Contribute?
 
