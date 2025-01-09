@@ -30,7 +30,8 @@ jobs:
         run:  |
             git config --global user.name 'github-actions[bot]'
             git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-            npm version patch --force -m "ci: bump version to %s"
+            npm version patch -m "ci: bump version to %s"
+            git remote set-url origin https://x-access-token:${{ secrets.GH_PAT }}@github.com/Quantium/Qogger.git
             git push origin main --follow-tags
 
       - name: Run tests
