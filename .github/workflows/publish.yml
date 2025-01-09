@@ -14,8 +14,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Patch version
-        run: npm version patch
       - name: Checkout code
         uses: actions/checkout@v4
 
@@ -31,6 +29,9 @@ jobs:
       - name: Run tests
         run: npm test
 
+      - name: Patch version
+        run: npm version patch
+    
       - name: Publish to npm
         run: npm publish
         env:
