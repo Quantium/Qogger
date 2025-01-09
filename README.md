@@ -78,7 +78,15 @@ Creates a debug instance.
 
 ## Contributing
 
-Contributions are welcome! Please open an issue or submit a pull request.
+Contributions are welcome! Please open an issue or submit a pull request. see the [CONTRIBUTING.md](CONTRIBUTING.md) file for details.
+
+### Version Management
+
+When contributing to this project, be aware that the npm publish workflow automatically patches the version number in `package.json` and `package-lock.json`. After pushing your changes:
+
+```bash
+git push origin main
+```
 
 ## License
 
