@@ -7,7 +7,7 @@ on:
       
 permissions:
   packages: write
-  contents: read
+  contents: write
 
 jobs:
   npm:
@@ -24,11 +24,11 @@ jobs:
           registry-url: 'https://registry.npmjs.org'
 
       - name: Patch version
-        run:  |
+        run: |
             git config --global user.name 'github-actions[bot]'
             git config --global user.email 'github-actions[bot]@users.noreply.github.com'
             npm version patch -m "ci: bump version to %s"
-            git remote set-url origin https://x-access-token:${{ secrets.GH_PAT }}@github.com/Quantium/Qogger.git
+            git remote set-url origin https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git
             git push origin main --follow-tags
 
       - name: Install dependencies
