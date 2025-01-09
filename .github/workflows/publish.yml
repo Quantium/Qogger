@@ -26,15 +26,15 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Run tests
-        run: npm test
-
       - name: Patch version
         run:  |
             git config --global user.name 'github-actions[bot]'
             git config --global user.email 'github-actions[bot]@users.noreply.github.com'
             npm version patch -m "ci: bump version to %s"
             git push origin main --follow-tags
+
+      - name: Run tests
+        run: npm test
     
       - name: Publish to npm
         run: npm publish
