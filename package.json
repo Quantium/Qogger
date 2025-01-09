@@ -1,6 +1,7 @@
 {
-  "name": "qogger-library",
+  "name": "qogger",
   "author": "Andrés 'Quantium' González Aragón",
+  "repository": "https://github.com/Quantium/Qogger",
   "license": "MIT",
   "version": "1.0.0",
   "main": "qogger.js",

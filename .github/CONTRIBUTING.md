@@ -1,4 +1,4 @@
-# Contributing to Qogger Library
+# Contributing to gh Library
 
 First off, thank you for considering contributing to Qogger Library! It's people like you that make this project great.
 
@@ -6,7 +6,7 @@ First off, thank you for considering contributing to Qogger Library! It's people
 
 ### Reporting Bugs
 
-If you find a bug, please open an issue [here](https://github.com/your-repo/qogger-library/issues) and include:
+If you find a bug, please open an issue [here](https://github.com/Quantium/Qogger/issues) and include:
 
 - A clear and descriptive title.
 - A detailed description of the bug.
@@ -15,7 +15,7 @@ If you find a bug, please open an issue [here](https://github.com/your-repo/qogg
 
 ### Suggesting Enhancements
 
-If you have an idea for an enhancement, please open an issue [here](https://github.com/your-repo/qogger-library/issues) and include:
+If you have an idea for an enhancement, please open an issue [here](https://github.com/Quantium/Qogger/issues) and include:
 
 - A clear and descriptive title.
 - A detailed description of the enhancement.
@@ -30,7 +30,7 @@ If you want to contribute code, please follow these steps:
 3. Make your changes.
 4. Commit your changes (`git commit -m 'Add some feature'`).
 5. Push to the branch (`git push origin feature/your-feature-name`).
-6. Open a pull request [here](https://github.com/your-repo/qogger-library/pulls).
+6. Open a pull request [here](https://github.com/Quantium/Qogger/pulls).
 
 ### Coding Standards
 
