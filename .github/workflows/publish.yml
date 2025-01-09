@@ -30,7 +30,11 @@ jobs:
         run: npm test
 
       - name: Patch version
-        run: npm version patch
+        run:  |
+            git config --global user.name 'github-actions[bot]'
+            git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+            npm version patch -m "ci: bump version to %s"
+            git push origin main --follow-tags
     
       - name: Publish to npm
         run: npm publish
