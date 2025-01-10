@@ -5,6 +5,7 @@
   "license": "MIT",
   "version": "1.0.7",
   "main": "qogger.js",
+  "type": "module",
   "scripts": {
     "test": "jest"
   },
