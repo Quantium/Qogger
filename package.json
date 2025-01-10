@@ -3,7 +3,7 @@
   "author": "Andrés 'Quantium' González Aragón",
   "repository": "https://github.com/Quantium/Qogger",
   "license": "MIT",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "main": "qogger.js",
   "type": "module",
   "scripts": {
